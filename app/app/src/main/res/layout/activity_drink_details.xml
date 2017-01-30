@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        tools:context="com.yarbsemaj.drinkap.DrinkDetails"
+    android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:src="@drawable/drinklistbg"
+            android:scaleType = "centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="150px"
+                android:id="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/loading"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="150px"
+                android:text="Drink Name"
+                android:id="@+id/drinkName"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/White"
+                android:textSize="25pt"
+                android:background="#9c000000" />
+
+
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="350px"
+                    android:id="@+id/gridView"
+                    android:scrollbars="horizontal"
+                    android:numColumns="auto_fit"
+                    android:orientation="vertical"
+                    android:columnWidth="200px"
+                    android:layout_below="@+id/scrollView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:choiceMode="singleChoice"
+                    android:stretchMode="spacingWidthUniform"
+                    android:verticalSpacing="10px" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:id="@+id/scrollView"
+                android:background="#6effffff"
+                android:layout_below="@+id/ratingBar2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150px"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices fermentum facilisis. Integer ornare aliquet gravida. Sed et leo nec diam tempus sodales. Fusce suscipit vulputate ante eu euismod. Maecenas id nibh sit amet dolor maximus varius. Donec est justo, cursus at lectus eget, accumsan posuere nunc. Nulla placerat lectus volutpat turpis iaculis, vitae rutrum massa ultricies. Duis mollis fermentum libero. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed mattis tempus mi, cursus efficitur tortor vehicula quis. Integer in dictum metus. Vestibulum sit amet arcu sollicitudin, pretium odio id, accumsan lectus."
+                    android:id="@+id/description"
+                    android:textColor="#212121"
+                    android:layout_below="@+id/textView4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </ScrollView>
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView2"
+                android:background="#6effffff"
+                android:layout_below="@+id/gridView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="300px"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices fermentum facilisis. Integer ornare aliquet gravida. Sed et leo nec diam tempus sodales. Fusce suscipit vulputate ante eu euismod. Maecenas id nibh sit amet dolor maximus varius. Donec est justo, cursus at lectus eget, accumsan posuere nunc. Nulla placerat lectus volutpat turpis iaculis, vitae rutrum massa ultricies. Duis mollis fermentum libero. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed mattis tempus mi, cursus efficitur tortor vehicula quis. Integer in dictum metus. Vestibulum sit amet arcu sollicitudin, pretium odio id, accumsan lectus."
+                    android:id="@+id/recipy"
+                    android:textColor="#212121"
+                    android:layout_below="@+id/gridView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </ScrollView>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar2"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+</FrameLayout>
